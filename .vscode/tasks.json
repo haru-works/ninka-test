@@ -1,0 +1,58 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "dev: api-gateway",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/api/api-gateway" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "dev: auth-service",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/api/auth-service" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "dev: invoice-service",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/api/invoice-service" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "dev: app-frontend",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/frontend/app-frontend" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "dev: admin-frontend",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": { "cwd": "${workspaceFolder}/frontend/admin-frontend" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "dev: all",
+      "dependsOn": [
+        "dev: api-gateway",
+        "dev: auth-service",
+        "dev: invoice-service",
+        "dev: app-frontend",
+        "dev: admin-frontend"
+      ],
+      "dependsOrder": "parallel",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}

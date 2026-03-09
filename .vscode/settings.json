@@ -1,0 +1,36 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.exclude": {
+    "node_modules": true,
+    "dist": true,
+    "coverage": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".ts", ".tsx"]
+  },
+  "typescript.tsdk": "frontend/node_modules/typescript/lib",
+  "vue.server.additionalExtensions": [],
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "[shellscript]": {
+    "files.eol": "\n"
+  },
+  "[plaintext]": {
+    "files.eol": "\n"
+  }
+}
